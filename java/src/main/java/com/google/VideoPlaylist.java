@@ -6,12 +6,12 @@ import java.util.*;
 class VideoPlaylist {
 
     private final String name;
-    private final Set<Video> videos;
+    private final LinkedHashSet<Video> videos;
 
     VideoPlaylist(String name) {
 
         this.name = name;
-        videos = new HashSet<Video>();
+        videos = new LinkedHashSet<Video>();
 
     }
 

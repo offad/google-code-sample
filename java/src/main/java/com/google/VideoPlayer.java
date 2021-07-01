@@ -785,6 +785,10 @@ public class VideoPlayer {
 
   
   /** 
+   * Attempts to allow (un-flag) a video. 
+   * 
+   * If a video doesn’t exist or is not currently flagged, display a warning message.
+   * 
    * @param videoId
    */
   public void allowVideo(String videoId) {

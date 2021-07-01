@@ -17,11 +17,14 @@ class VideoLibrary {
   private final HashMap<String, Video> videos;
 
   VideoLibrary() {
+
     this.videos = new HashMap<>();
+
     try {
       File file = new File(this.getClass().getResource("/videos.txt").getFile());
 
       Scanner scanner = new Scanner(file);
+
       while (scanner.hasNextLine()) {
         String line = scanner.nextLine();
         String[] split = line.split("\\|");
@@ -36,10 +39,14 @@ class VideoLibrary {
         }
         this.videos.put(id, new Video(title, id, tags));
       }
+
+      scanner.close();
+
     } catch (FileNotFoundException e) {
       System.out.println("Couldn't find videos.txt");
       e.printStackTrace();
     }
+
   }
 
   List<Video> getVideos() {
@@ -52,4 +59,5 @@ class VideoLibrary {
   Video getVideo(String videoId) {
     return this.videos.get(videoId);
   }
+
 }

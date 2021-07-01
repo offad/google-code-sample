@@ -1,6 +1,6 @@
 # Google Work Sample Submission
 
-My submission for the Google Youtube Challenge using Java 11, Junit 5.4 and Maven.
+My submission for the Google Youtube Challenge for Bright Network's Internship Experience in Technology 2021, using Java 11, Junit 5.4 and Maven.
 
 NOTE: **This project was completed in Java in about a day, so only code inside of the [Java](java) folder will work.**
 
